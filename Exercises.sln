@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GraphicsCodexProjects", "GraphicsCodexProjects", "{71B2BD7B-4DF7-4F3D-A1B2-D79F683EC52D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RayTracingInAWeekend", "RayTracingInAWeekend", "{911F4AF0-B3F6-4755-B693-57D865E961CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2271D504-7016-460E-A1F8-00317C0DD471}"
+	ProjectSection(SolutionItems) = preProject
+		Modules\Modules.h = Modules\Modules.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gli", "Modules\gli\build\gli\gli_dummy.vcxproj", "{DF019156-B733-30F6-8276-0C625AEE9B82}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glm", "Modules\glm\build\glm\glm_static.vcxproj", "{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutputAnImage", "RayTracingInAWeekend\OutputAnImage\OutputAnImage.vcxproj", "{2CDED841-3FC3-4BA0-8573-BA1594966C99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		MinSizeRel|x64 = MinSizeRel|x64
+		Release|x64 = Release|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF019156-B733-30F6-8276-0C625AEE9B82}.Debug|x64.ActiveCfg = Debug|x64
+		{DF019156-B733-30F6-8276-0C625AEE9B82}.Debug|x64.Build.0 = Debug|x64
+		{DF019156-B733-30F6-8276-0C625AEE9B82}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{DF019156-B733-30F6-8276-0C625AEE9B82}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{DF019156-B733-30F6-8276-0C625AEE9B82}.Release|x64.ActiveCfg = Release|x64
+		{DF019156-B733-30F6-8276-0C625AEE9B82}.Release|x64.Build.0 = Release|x64
+		{DF019156-B733-30F6-8276-0C625AEE9B82}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{DF019156-B733-30F6-8276-0C625AEE9B82}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.Debug|x64.ActiveCfg = Debug|x64
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.Debug|x64.Build.0 = Debug|x64
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.Release|x64.ActiveCfg = Release|x64
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.Release|x64.Build.0 = Release|x64
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.Debug|x64.ActiveCfg = Debug|x64
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.Debug|x64.Build.0 = Debug|x64
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.MinSizeRel|x64.Build.0 = Release|x64
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.Release|x64.ActiveCfg = Release|x64
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.Release|x64.Build.0 = Release|x64
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.RelWithDebInfo|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF019156-B733-30F6-8276-0C625AEE9B82} = {2271D504-7016-460E-A1F8-00317C0DD471}
+		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC} = {2271D504-7016-460E-A1F8-00317C0DD471}
+		{2CDED841-3FC3-4BA0-8573-BA1594966C99} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F012A3A8-7271-4A97-8C81-0DD2FFF6361A}
+	EndGlobalSection
+EndGlobal
