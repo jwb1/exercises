@@ -1,3 +1,6 @@
 [submodule "Modules/gli"]
 	path = Modules/gli
 	url = https://github.com/jwb1/gli.git
+[submodule "Modules/glm"]
+	path = Modules/glm
+	url = https://github.com/jwb1/glm.git
