@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutputAnImage", "RayTracing
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RaysCameraAndBackground", "RayTracingInAWeekend\RaysCameraAndBackground\RaysCameraAndBackground.vcxproj", "{6D6A2643-E041-4C58-A819-19692F412048}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddingASphere", "RayTracingInAWeekend\AddingASphere\AddingASphere.vcxproj", "{EB4C85D0-C24A-4088-A571-03AE95FBEA11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -63,6 +65,14 @@ Global
 		{6D6A2643-E041-4C58-A819-19692F412048}.Release|x64.Build.0 = Release|x64
 		{6D6A2643-E041-4C58-A819-19692F412048}.RelWithDebInfo|x64.ActiveCfg = Release|x64
 		{6D6A2643-E041-4C58-A819-19692F412048}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.Debug|x64.ActiveCfg = Debug|x64
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.Debug|x64.Build.0 = Debug|x64
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.MinSizeRel|x64.Build.0 = Release|x64
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.Release|x64.ActiveCfg = Release|x64
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.Release|x64.Build.0 = Release|x64
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.RelWithDebInfo|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +82,7 @@ Global
 		{973053CC-147C-38D2-A05D-A0DEA11573B1} = {2271D504-7016-460E-A1F8-00317C0DD471}
 		{2CDED841-3FC3-4BA0-8573-BA1594966C99} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 		{6D6A2643-E041-4C58-A819-19692F412048} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
+		{EB4C85D0-C24A-4088-A571-03AE95FBEA11} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F012A3A8-7271-4A97-8C81-0DD2FFF6361A}
