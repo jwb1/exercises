@@ -7,7 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GraphicsCodexProjects", "Gr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RayTracingInAWeekend", "RayTracingInAWeekend", "{911F4AF0-B3F6-4755-B693-57D865E961CA}"
 	ProjectSection(SolutionItems) = preProject
+		RayTracingInAWeekend\Camera.h = RayTracingInAWeekend\Camera.h
 		RayTracingInAWeekend\Ray.h = RayTracingInAWeekend\Ray.h
+		RayTracingInAWeekend\Solid.h = RayTracingInAWeekend\Solid.h
+		RayTracingInAWeekend\Sphere.h = RayTracingInAWeekend\Sphere.h
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2271D504-7016-460E-A1F8-00317C0DD471}"
@@ -24,6 +27,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RaysCameraAndBackground", "RayTracingInAWeekend\RaysCameraAndBackground\RaysCameraAndBackground.vcxproj", "{6D6A2643-E041-4C58-A819-19692F412048}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddingASphere", "RayTracingInAWeekend\AddingASphere\AddingASphere.vcxproj", "{EB4C85D0-C24A-4088-A571-03AE95FBEA11}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NormalsAndMultipleSpheres", "RayTracingInAWeekend\NormalsAndMultipleSpheres\NormalsAndMultipleSpheres.vcxproj", "{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Antialiasing", "RayTracingInAWeekend\Antialiasing\Antialiasing.vcxproj", "{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +80,22 @@ Global
 		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.Release|x64.Build.0 = Release|x64
 		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.RelWithDebInfo|x64.ActiveCfg = Release|x64
 		{EB4C85D0-C24A-4088-A571-03AE95FBEA11}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}.Debug|x64.ActiveCfg = Debug|x64
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}.Debug|x64.Build.0 = Debug|x64
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}.MinSizeRel|x64.Build.0 = Release|x64
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}.Release|x64.ActiveCfg = Release|x64
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}.Release|x64.Build.0 = Release|x64
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F}.RelWithDebInfo|x64.Build.0 = Release|x64
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}.Debug|x64.ActiveCfg = Debug|x64
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}.Debug|x64.Build.0 = Debug|x64
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}.MinSizeRel|x64.ActiveCfg = Release|x64
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}.MinSizeRel|x64.Build.0 = Release|x64
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}.Release|x64.ActiveCfg = Release|x64
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}.Release|x64.Build.0 = Release|x64
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}.RelWithDebInfo|x64.ActiveCfg = Release|x64
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB}.RelWithDebInfo|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +106,8 @@ Global
 		{2CDED841-3FC3-4BA0-8573-BA1594966C99} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 		{6D6A2643-E041-4C58-A819-19692F412048} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 		{EB4C85D0-C24A-4088-A571-03AE95FBEA11} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
+		{793A0158-114F-4772-8F6D-DC2C4EFB5A2F} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
+		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F012A3A8-7271-4A97-8C81-0DD2FFF6361A}
