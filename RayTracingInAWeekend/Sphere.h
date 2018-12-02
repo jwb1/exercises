@@ -29,14 +29,14 @@ public:
         float discriminant = b * b - a * c;
         if (discriminant >= 0.0f) {
             // Checking the '-' root first ensures the intersection closer to the ray origin.
-            float t = (-b - std::sqrtf(discriminant)) * a;
+            float t = (-b - std::sqrtf(discriminant)) / a;
             if (t < tMax && t > tMin) {
                 intersect.point = ray.PointAtParamerter(t);
                 intersect.normal = glm::normalize(intersect.point - m_center);
                 intersect.t = t;
                 return (true);
             }
-            t = (-b + std::sqrtf(discriminant)) * a;
+            t = (-b + std::sqrtf(discriminant)) / a;
             if (t < tMax && t > tMin) {
                 intersect.point = ray.PointAtParamerter(t);
                 intersect.normal = glm::normalize(intersect.point - m_center);

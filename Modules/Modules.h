@@ -23,6 +23,7 @@ cmake .. -G "Visual Studio 15 2017 Win64"
 #include <glm/gtc/type_precision.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/transform.hpp>
+#include <glm/gtc/color_space.hpp>
 
 // GLI
 #include <gli/gli.hpp>
