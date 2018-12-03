@@ -1,11 +1,5 @@
 #pragma once
 
-struct Intersection {
-    glm::vec3 point;
-    glm::vec3 normal;
-    float t;
-};
-
 class Solid {
 public:
     virtual bool Intersect(const Ray& ray, float tMin, float tMax, Intersection& intersect) const = 0;
