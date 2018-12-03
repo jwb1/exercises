@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RayTracingInAWeekend", "Ray
 		RayTracingInAWeekend\Intersection.h = RayTracingInAWeekend\Intersection.h
 		RayTracingInAWeekend\LambertianMaterial.h = RayTracingInAWeekend\LambertianMaterial.h
 		RayTracingInAWeekend\Material.h = RayTracingInAWeekend\Material.h
+		RayTracingInAWeekend\MetalMaterial.h = RayTracingInAWeekend\MetalMaterial.h
+		RayTracingInAWeekend\Random.h = RayTracingInAWeekend\Random.h
 		RayTracingInAWeekend\Ray.h = RayTracingInAWeekend\Ray.h
 		RayTracingInAWeekend\Solid.h = RayTracingInAWeekend\Solid.h
 		RayTracingInAWeekend\Sphere.h = RayTracingInAWeekend\Sphere.h
@@ -21,9 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2271
 		Modules\Modules.h = Modules\Modules.h
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gli", "Modules\gli\build\gli\gli_dummy.vcxproj", "{DF019156-B733-30F6-8276-0C625AEE9B82}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gli_dummy", "Modules\gli\build\gli\gli_dummy.vcxproj", "{6729CD63-E14B-30EA-8470-DAB119980BB0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glm", "Modules\glm\build\glm\glm_static.vcxproj", "{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glm_static", "Modules\glm\build\glm\glm_static.vcxproj", "{973053CC-147C-38D2-A05D-A0DEA11573B1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutputAnImage", "RayTracingInAWeekend\OutputAnImage\OutputAnImage.vcxproj", "{2CDED841-3FC3-4BA0-8573-BA1594966C99}"
 EndProject
@@ -45,10 +47,10 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DF019156-B733-30F6-8276-0C625AEE9B82}.Debug|x64.ActiveCfg = Debug|x64
-		{DF019156-B733-30F6-8276-0C625AEE9B82}.Release|x64.ActiveCfg = Release|x64
-		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.Debug|x64.ActiveCfg = Debug|x64
-		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC}.Release|x64.ActiveCfg = Release|x64
+		{6729CD63-E14B-30EA-8470-DAB119980BB0}.Debug|x64.ActiveCfg = Debug|x64
+		{6729CD63-E14B-30EA-8470-DAB119980BB0}.Release|x64.ActiveCfg = Release|x64
+		{973053CC-147C-38D2-A05D-A0DEA11573B1}.Debug|x64.ActiveCfg = Debug|x64
+		{973053CC-147C-38D2-A05D-A0DEA11573B1}.Release|x64.ActiveCfg = Release|x64
 		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.Debug|x64.ActiveCfg = Debug|x64
 		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.Debug|x64.Build.0 = Debug|x64
 		{2CDED841-3FC3-4BA0-8573-BA1594966C99}.Release|x64.ActiveCfg = Release|x64
@@ -82,8 +84,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{DF019156-B733-30F6-8276-0C625AEE9B82} = {2271D504-7016-460E-A1F8-00317C0DD471}
-		{A0E2F84E-8D46-3703-9FFE-AD1379033DFC} = {2271D504-7016-460E-A1F8-00317C0DD471}
+		{6729CD63-E14B-30EA-8470-DAB119980BB0} = {2271D504-7016-460E-A1F8-00317C0DD471}
+		{973053CC-147C-38D2-A05D-A0DEA11573B1} = {2271D504-7016-460E-A1F8-00317C0DD471}
 		{2CDED841-3FC3-4BA0-8573-BA1594966C99} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 		{6D6A2643-E041-4C58-A819-19692F412048} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 		{EB4C85D0-C24A-4088-A571-03AE95FBEA11} = {911F4AF0-B3F6-4755-B693-57D865E961CA}

@@ -4,11 +4,20 @@ class Sphere : public Solid {
 public:
     Sphere()
         : m_radius(0.0f)
+        , m_material(nullptr)
     {}
-    Sphere(const glm::vec3& center, float radius)
+    Sphere(const glm::vec3& center, float radius, Material* material = nullptr)
         : m_center(center)
         , m_radius(radius)
+        , m_material(material)
     {}
+
+    virtual ~Sphere()
+    {
+        if (m_material) {
+            delete m_material;
+        }
+    }
 
     glm::vec3 Center() const
     {
@@ -34,6 +43,7 @@ public:
                 intersect.point = ray.PointAtParamerter(t);
                 intersect.normal = glm::normalize(intersect.point - m_center);
                 intersect.t = t;
+                intersect.material = m_material;
                 return (true);
             }
             t = (-b + std::sqrtf(discriminant)) / a;
@@ -41,6 +51,7 @@ public:
                 intersect.point = ray.PointAtParamerter(t);
                 intersect.normal = glm::normalize(intersect.point - m_center);
                 intersect.t = t;
+                intersect.material = m_material;
                 return (true);
             }
         }
@@ -51,4 +62,5 @@ public:
 private:
     glm::vec3 m_center;
     float m_radius;
+    Material* m_material; // For now each solid owns it's own material.
 };
