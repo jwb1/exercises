@@ -17,4 +17,9 @@ protected:
         } while (glm::length(p) >= 1.0f);
         return (p);
     }
+
+    glm::vec3 ReflectionDirection(const glm::vec3& inDirection, const glm::vec3& normal) const
+    {
+        return (inDirection - 2.0f * glm::dot(inDirection, normal) * normal);
+    }
 };

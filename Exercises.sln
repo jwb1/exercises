@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RayTracingInAWeekend", "RayTracingInAWeekend", "{911F4AF0-B3F6-4755-B693-57D865E961CA}"
 	ProjectSection(SolutionItems) = preProject
 		RayTracingInAWeekend\Camera.h = RayTracingInAWeekend\Camera.h
+		RayTracingInAWeekend\DielectricMaterial.h = RayTracingInAWeekend\DielectricMaterial.h
 		RayTracingInAWeekend\Intersection.h = RayTracingInAWeekend\Intersection.h
 		RayTracingInAWeekend\LambertianMaterial.h = RayTracingInAWeekend\LambertianMaterial.h
 		RayTracingInAWeekend\Material.h = RayTracingInAWeekend\Material.h
@@ -40,6 +41,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiffuseMaterials", "RayTracingInAWeekend\DiffuseMaterials\DiffuseMaterials.vcxproj", "{EC3B28D1-EA9C-4FE2-BF1F-096E38E6B30B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Metal", "RayTracingInAWeekend\Metal\Metal.vcxproj", "{0D1B2195-B853-4CF4-A99E-5EE68DB39AEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dielectrics", "RayTracingInAWeekend\Dielectrics\Dielectrics.vcxproj", "{56E81F3A-02B1-4369-81D8-12C42B713CCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +82,10 @@ Global
 		{0D1B2195-B853-4CF4-A99E-5EE68DB39AEA}.Debug|x64.Build.0 = Debug|x64
 		{0D1B2195-B853-4CF4-A99E-5EE68DB39AEA}.Release|x64.ActiveCfg = Release|x64
 		{0D1B2195-B853-4CF4-A99E-5EE68DB39AEA}.Release|x64.Build.0 = Release|x64
+		{56E81F3A-02B1-4369-81D8-12C42B713CCF}.Debug|x64.ActiveCfg = Debug|x64
+		{56E81F3A-02B1-4369-81D8-12C42B713CCF}.Debug|x64.Build.0 = Debug|x64
+		{56E81F3A-02B1-4369-81D8-12C42B713CCF}.Release|x64.ActiveCfg = Release|x64
+		{56E81F3A-02B1-4369-81D8-12C42B713CCF}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +100,7 @@ Global
 		{B75C312A-178C-4F37-BFCC-1F4DAF97D9FB} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 		{EC3B28D1-EA9C-4FE2-BF1F-096E38E6B30B} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 		{0D1B2195-B853-4CF4-A99E-5EE68DB39AEA} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
+		{56E81F3A-02B1-4369-81D8-12C42B713CCF} = {911F4AF0-B3F6-4755-B693-57D865E961CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F012A3A8-7271-4A97-8C81-0DD2FFF6361A}

@@ -18,9 +18,4 @@ public:
 private:
     glm::vec3 m_albedo;
     float m_roughness;
-
-    glm::vec3 ReflectionDirection(const glm::vec3& inDirection, const glm::vec3& normal) const
-    {
-        return (inDirection - 2.0f * glm::dot(inDirection, normal) * normal);
-    }
 };
