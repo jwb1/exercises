@@ -3,6 +3,9 @@
 class Camera {
 public:
     Camera(
+        glm::vec3 position,
+        glm::vec3 lookAt,
+        glm::vec3 up,
         float distanceToImage,
         int imageWidthInPixels,
         int imageHeightInPixels,
@@ -10,6 +13,7 @@ public:
         )
         : m_aspectRatio(float(imageWidthInPixels) / float(imageHeightInPixels))
         , m_fieldOfView(fieldOfView)
+        , m_position(position)
     {
         m_imageHeight = 2.0f * std::fabs(distanceToImage) * std::tanf(fieldOfView / 2.0f);
         m_imageWidth = m_imageHeight * m_aspectRatio;
@@ -45,10 +49,10 @@ public:
     }
 
 private:
-    // Assume camera origin is (0.0f, 0.0f, 0.0f), pointed along -z axis.
     float m_aspectRatio; // Ratio: height / width
     float m_fieldOfView; // In Radians, measuring y side of the image.
 
+    glm::vec3 m_position; // Camera position, in 3D coordinates.
     float m_imageHeight; // In 3D coordinates, not pixels.
     float m_imageWidth;  // In 3D coordinates, not pixels.
     glm::vec3 m_imageLowerLeft; // In 3D coordinates.

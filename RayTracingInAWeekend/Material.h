@@ -1,4 +1,5 @@
 #pragma once
+#include "Random.h"
 
 class Material {
 public:

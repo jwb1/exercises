@@ -1,4 +1,6 @@
 #pragma once
+#include "Solid.h"
+#include "Material.h"
 
 class Sphere : public Solid {
 public:
